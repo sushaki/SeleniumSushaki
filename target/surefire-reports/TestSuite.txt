@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 136.611 s <<< FAILURE! - in TestSuite
+Test2LabSelenium.secondTestSelenium  Time elapsed: 56.979 s  <<< FAILURE!
+java.lang.NumberFormatException: For input string: ""
+	at Test2LabSelenium.secondTestSelenium(Test2LabSelenium.java:53)
+
+testSelenium.Test1LabSelenium.firstTestSelenium  Time elapsed: 49.495 s  <<< FAILURE!
+java.lang.AssertionError: User text after entering must be equal to Text under Show Message button expected [] but found [Hello, my name is Ivan]
+	at testSelenium.Test1LabSelenium.firstTestSelenium(Test1LabSelenium.java:49)
+
+testSelenium.Test1LabSelenium.afterTest  Time elapsed: 22.779 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testSelenium.Test1LabSelenium.afterTest(Test1LabSelenium.java:55)
+
