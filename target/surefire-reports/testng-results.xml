@@ -2,18 +2,18 @@
 <testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="129196" started-at="2021-08-24T21:03:46 EEST" finished-at="2021-08-24T21:05:56 EEST">
+  <suite name="Surefire suite" duration-ms="194579" started-at="2021-09-02T21:10:37 EEST" finished-at="2021-09-02T21:13:52 EEST">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="129196" started-at="2021-08-24T21:03:46 EEST" finished-at="2021-08-24T21:05:56 EEST">
+    <test name="Surefire test" duration-ms="194579" started-at="2021-09-02T21:10:37 EEST" finished-at="2021-09-02T21:13:52 EEST">
       <class name="testSelenium.TestSelenium">
-        <test-method status="PASS" signature="firstTestSelenium()[pri:0, instance:testSelenium.TestSelenium@3d99d22e]" name="firstTestSelenium" duration-ms="22731" started-at="2021-08-24T21:05:33 EEST" finished-at="2021-08-24T21:05:56 EEST">
+        <test-method status="PASS" signature="firstTestSelenium()[pri:0, instance:testSelenium.TestSelenium@3d99d22e]" name="firstTestSelenium" duration-ms="64799" started-at="2021-09-02T21:12:47 EEST" finished-at="2021-09-02T21:13:52 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstTestSelenium -->
       </class> <!-- testSelenium.TestSelenium -->
       <class name="Test2LabSelenium">
-        <test-method status="FAIL" signature="secondTestSelenium()[pri:0, instance:Test2LabSelenium@eec5a4a]" name="secondTestSelenium" duration-ms="55863" started-at="2021-08-24T21:03:46 EEST" finished-at="2021-08-24T21:04:42 EEST">
+        <test-method status="FAIL" signature="secondTestSelenium()[pri:0, instance:Test2LabSelenium@eec5a4a]" name="secondTestSelenium" duration-ms="85916" started-at="2021-09-02T21:10:37 EEST" finished-at="2021-09-02T21:12:03 EEST">
           <exception class="java.lang.NumberFormatException">
             <message>
               <![CDATA[For input string: ""]]>
@@ -23,7 +23,7 @@
 at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 at java.lang.Integer.parseInt(Integer.java:592)
 at java.lang.Integer.<init>(Integer.java:867)
-at Test2LabSelenium.secondTestSelenium(Test2LabSelenium.java:53)
+at Test2LabSelenium.secondTestSelenium(Test2LabSelenium.java:54)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,7 +65,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
         </test-method> <!-- secondTestSelenium -->
       </class> <!-- Test2LabSelenium -->
       <class name="testSelenium.Test1LabSelenium">
-        <test-method status="FAIL" signature="firstTestSelenium()[pri:0, instance:testSelenium.Test1LabSelenium@32709393]" name="firstTestSelenium" duration-ms="50531" started-at="2021-08-24T21:04:42 EEST" finished-at="2021-08-24T21:05:33 EEST">
+        <test-method status="FAIL" signature="firstTestSelenium()[pri:0, instance:testSelenium.Test1LabSelenium@32709393]" name="firstTestSelenium" duration-ms="43697" started-at="2021-09-02T21:12:03 EEST" finished-at="2021-09-02T21:12:47 EEST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[User text after entering must be equal to Text under Show Message button expected [] but found [Hello, my name is Ivan]]]>
@@ -117,7 +117,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstTestSelenium -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:testSelenium.Test1LabSelenium@32709393]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-08-24T21:05:56 EEST" finished-at="2021-08-24T21:05:56 EEST">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:testSelenium.Test1LabSelenium@32709393]" name="afterTest" is-config="true" duration-ms="2" started-at="2021-09-02T21:13:52 EEST" finished-at="2021-09-02T21:13:52 EEST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
