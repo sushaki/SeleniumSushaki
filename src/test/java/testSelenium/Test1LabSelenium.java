@@ -10,16 +10,7 @@ public class Test1LabSelenium extends BaseClass {
 
     @Test
     public void firstTestSelenium() {
-//        WebDriverManager.chromedriver().setup();
-//        WebDriver driver = new ChromeDriver();
-//        WebDriverWait wait = new WebDriverWait(driver, 25);
-//        WebDriverWait wait2 = new WebDriverWait(driver, 7);
-//        driver.manage().window().maximize();
-//        String urlSeleniumTestSite = "https://www.seleniumeasy.com/test/";
-//        driver.get(urlSeleniumTestSite);
-//        WebElement closeLightBox = wait.until(ExpectedConditions.elementToBeClickable
-//                (By.xpath("//*[@id='at-cv-lightbox-close']")));
-//        closeLightBox.click();
+
         WebElement inputForms = wait2.until(ExpectedConditions.elementToBeClickable
                 (By.xpath("//div[@class='collapse navbar-collapse']//" +
                         "a[contains(text(),'Input Forms')]")));
