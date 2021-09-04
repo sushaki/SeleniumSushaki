@@ -9,18 +9,22 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">194 579</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">203 551</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testSelenium.Test1LabSelenium</td><td><a href="#m0">afterTest</a></td><td rowspan="1">1630606432103</td><td rowspan="1">2</td></tr><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test2LabSelenium</td><td><a href="#m1">secondTestSelenium</a></td><td rowspan="1">1630606237584</td><td rowspan="1">85916</td></tr><tr class="failedodd"><td rowspan="1">testSelenium.Test1LabSelenium</td><td><a href="#m2">firstTestSelenium</a></td><td rowspan="1">1630606323605</td><td rowspan="1">43697</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testSelenium.TestSelenium</td><td><a href="#m3">firstTestSelenium</a></td><td rowspan="1">1630606367303</td><td rowspan="1">64799</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testSelenium.Test1LabSelenium</td><td><a href="#m0">afterTest</a></td><td rowspan="1">1630607070487</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test2LabSelenium</td><td><a href="#m1">secondTestSelenium</a></td><td rowspan="1">1630606867002</td><td rowspan="1">59692</td></tr><tr class="failedodd"><td rowspan="1">testSelenium.Test1LabSelenium</td><td><a href="#m2">firstTestSelenium</a></td><td rowspan="1">1630606926845</td><td rowspan="1">59093</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testSelenium.TestSelenium</td><td><a href="#m3">firstTestSelenium</a></td><td rowspan="1">1630606985938</td><td rowspan="1">84549</td></tr></tbody>
 </table>
 <h2>Surefire test</h2><h3 id="m0">testSelenium.Test1LabSelenium#afterTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
 	at testSelenium.Test1LabSelenium.afterTest(Test1LabSelenium.java:55)
 ... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Test2LabSelenium#secondTestSelenium</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;&quot;
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:592)
-	at java.lang.Integer.&lt;init&gt;(Integer.java:867)
-	at Test2LabSelenium.secondTestSelenium(Test2LabSelenium.java:54)
+<h3 id="m1">Test2LabSelenium#secondTestSelenium</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id=&apos;at-cv-lightbox-close&apos;] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-7E96029&apos;, ip: &apos;172.17.253.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Sushak\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4619366a429dbffcaaffe8f0635b5732
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Test2LabSelenium.secondTestSelenium(Test2LabSelenium.java:27)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">testSelenium.Test1LabSelenium#firstTestSelenium</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: User text after entering must be equal to Text under Show Message button expected [] but found [Hello, my name is Ivan]

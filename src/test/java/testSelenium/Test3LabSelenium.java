@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class TestSelenium {
+public class Test3LabSelenium {
     @Test
     public void firstTestSelenium() {
         WebDriverManager.chromedriver().setup();

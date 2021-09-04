@@ -1,16 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 199.571 s <<< FAILURE! - in TestSuite
-Test2LabSelenium.secondTestSelenium  Time elapsed: 86.114 s  <<< FAILURE!
-java.lang.NumberFormatException: For input string: ""
-	at Test2LabSelenium.secondTestSelenium(Test2LabSelenium.java:54)
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 206.8 s <<< FAILURE! - in TestSuite
+Test2LabSelenium.secondTestSelenium  Time elapsed: 59.918 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id='at-cv-lightbox-close'] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7E96029', ip: '172.17.253.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Sushak\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4619366a429dbffcaaffe8f0635b5732
+	at Test2LabSelenium.secondTestSelenium(Test2LabSelenium.java:27)
 
-testSelenium.Test1LabSelenium.firstTestSelenium  Time elapsed: 43.675 s  <<< FAILURE!
+testSelenium.Test1LabSelenium.firstTestSelenium  Time elapsed: 59.101 s  <<< FAILURE!
 java.lang.AssertionError: User text after entering must be equal to Text under Show Message button expected [] but found [Hello, my name is Ivan]
 	at testSelenium.Test1LabSelenium.firstTestSelenium(Test1LabSelenium.java:49)
 
-testSelenium.Test1LabSelenium.afterTest  Time elapsed: 64.755 s  <<< FAILURE!
+testSelenium.Test1LabSelenium.afterTest  Time elapsed: 84.597 s  <<< FAILURE!
 java.lang.NullPointerException
 	at testSelenium.Test1LabSelenium.afterTest(Test1LabSelenium.java:55)
 

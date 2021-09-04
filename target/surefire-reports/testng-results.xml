@@ -2,28 +2,37 @@
 <testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="194579" started-at="2021-09-02T21:10:37 EEST" finished-at="2021-09-02T21:13:52 EEST">
+  <suite name="Surefire suite" duration-ms="203551" started-at="2021-09-02T21:21:06 EEST" finished-at="2021-09-02T21:24:30 EEST">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="194579" started-at="2021-09-02T21:10:37 EEST" finished-at="2021-09-02T21:13:52 EEST">
+    <test name="Surefire test" duration-ms="203551" started-at="2021-09-02T21:21:06 EEST" finished-at="2021-09-02T21:24:30 EEST">
       <class name="testSelenium.TestSelenium">
-        <test-method status="PASS" signature="firstTestSelenium()[pri:0, instance:testSelenium.TestSelenium@3d99d22e]" name="firstTestSelenium" duration-ms="64799" started-at="2021-09-02T21:12:47 EEST" finished-at="2021-09-02T21:13:52 EEST">
+        <test-method status="PASS" signature="firstTestSelenium()[pri:0, instance:testSelenium.TestSelenium@3d99d22e]" name="firstTestSelenium" duration-ms="84549" started-at="2021-09-02T21:23:05 EEST" finished-at="2021-09-02T21:24:30 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstTestSelenium -->
       </class> <!-- testSelenium.TestSelenium -->
       <class name="Test2LabSelenium">
-        <test-method status="FAIL" signature="secondTestSelenium()[pri:0, instance:Test2LabSelenium@eec5a4a]" name="secondTestSelenium" duration-ms="85916" started-at="2021-09-02T21:10:37 EEST" finished-at="2021-09-02T21:12:03 EEST">
-          <exception class="java.lang.NumberFormatException">
+        <test-method status="FAIL" signature="secondTestSelenium()[pri:0, instance:Test2LabSelenium@eec5a4a]" name="secondTestSelenium" duration-ms="59692" started-at="2021-09-02T21:21:07 EEST" finished-at="2021-09-02T21:22:06 EEST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[For input string: ""]]>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id='at-cv-lightbox-close'] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7E96029', ip: '172.17.253.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Sushak\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4619366a429dbffcaaffe8f0635b5732]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: ""
-at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-at java.lang.Integer.parseInt(Integer.java:592)
-at java.lang.Integer.<init>(Integer.java:867)
-at Test2LabSelenium.secondTestSelenium(Test2LabSelenium.java:54)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id='at-cv-lightbox-close'] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7E96029', ip: '172.17.253.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Sushak\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4619366a429dbffcaaffe8f0635b5732
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at Test2LabSelenium.secondTestSelenium(Test2LabSelenium.java:27)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,13 +68,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- secondTestSelenium -->
       </class> <!-- Test2LabSelenium -->
       <class name="testSelenium.Test1LabSelenium">
-        <test-method status="FAIL" signature="firstTestSelenium()[pri:0, instance:testSelenium.Test1LabSelenium@32709393]" name="firstTestSelenium" duration-ms="43697" started-at="2021-09-02T21:12:03 EEST" finished-at="2021-09-02T21:12:47 EEST">
+        <test-method status="FAIL" signature="firstTestSelenium()[pri:0, instance:testSelenium.Test1LabSelenium@32709393]" name="firstTestSelenium" duration-ms="59093" started-at="2021-09-02T21:22:06 EEST" finished-at="2021-09-02T21:23:05 EEST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[User text after entering must be equal to Text under Show Message button expected [] but found [Hello, my name is Ivan]]]>
@@ -117,7 +126,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstTestSelenium -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:testSelenium.Test1LabSelenium@32709393]" name="afterTest" is-config="true" duration-ms="2" started-at="2021-09-02T21:13:52 EEST" finished-at="2021-09-02T21:13:52 EEST">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:testSelenium.Test1LabSelenium@32709393]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-09-02T21:24:30 EEST" finished-at="2021-09-02T21:24:30 EEST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
