@@ -9,12 +9,11 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-public class Test2LabSelenium {
-    //      WebDriver driver;
-    //      WebDriverWait wait;
-    //      WebDriverWait wait2;
 
-        @Test
+public class Test2LabSelenium {
+    WebDriver driver;
+
+    @Test
     public void secondTestSelenium() {
 
         WebDriverManager.chromedriver().setup();
@@ -49,22 +48,32 @@ public class Test2LabSelenium {
         totalValueButton.click();
 
         String totalResultLineOnPage = driver.findElement
-                (By.xpath("//span[@id='displayvalue']")).getText();
+                (By.xpath("//span[@id='displayvalue']")).getAttribute(toString());
 
-            Integer valueA = new Integer(enterValueAField.getText());
-            Integer valueB = new Integer(enterValueBField.getText());
-            Integer expectedTotalValue = valueA + valueB;
-            Integer actualTotalValue = new Integer(totalResultLineOnPage);
+        Integer valueA = new Integer(enterValueAField.getAttribute(toString()));
+        Integer valueB = new Integer(enterValueBField.getAttribute(toString()));
+        Integer expectedTotalValue = valueA + valueB;
+        Integer actualTotalValue = new Integer(totalResultLineOnPage);
 
         Assert.assertEquals(actualTotalValue, expectedTotalValue,
                 "Expected total value must be equal to value under 'GET TOTAL' button");
+
+        try {
+            Assert.assertEquals(actualTotalValue, expectedTotalValue,
+                    "Expected total value must be equal to value under 'GET TOTAL' button");
+        } catch (Exception e) {
+            System.out.println("nothing happens");
+        } finally {
+            System.out.println("test is over");
+        }
     }
 
-//    @AfterTest(alwaysRun = true)
-//    public void afterTest() {
-//        driver.quit();
-//        System.out.println("Test is finished");
+    @AfterTest(alwaysRun = true)
+    public void afterTest() {
+        driver.quit();
+        System.out.println("Test is finished");
     }
+}
 
 
 

@@ -9,19 +9,18 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+
 
 
 public class BaseClass {
-    WebDriver driver = new ChromeDriver();
-    WebDriverWait wait = new WebDriverWait(driver, 25);
-    WebDriverWait wait2 = new WebDriverWait(driver, 7);
+    public WebDriver driver = new ChromeDriver();
+    public WebDriverWait wait = new WebDriverWait(driver, 25);
+    public WebDriverWait wait2 = new WebDriverWait(driver, 7);
 
 
     @BeforeTest
     public void beforeTest() {
         WebDriverManager.chromedriver().setup();
-
         driver.manage().window().maximize();
         String urlSeleniumTestSite = "https://www.seleniumeasy.com/test/";
         driver.get(urlSeleniumTestSite);
@@ -29,7 +28,6 @@ public class BaseClass {
                 (By.xpath("//*[@id='at-cv-lightbox-close']")));
         closeLightBox.click();
     }
-    @Test ()
 
     @AfterTest(alwaysRun = true)
     public void afterTest() {
