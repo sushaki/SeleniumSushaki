@@ -44,8 +44,10 @@ public class Test3LabSelenium {
                 (By.xpath("//label[text()='Option 3']")));
         option3CheckBoxDemoLink.click();
 
-        Assert.assertFalse(option1CheckBoxDemoLink.isSelected());
-        Assert.assertFalse(option3CheckBoxDemoLink.isSelected());
+        Assert.assertTrue(option1CheckBoxDemoLink.isSelected(), "Option 1 Link" +
+                " must be selected");
+        Assert.assertTrue(option1CheckBoxDemoLink.isSelected(), "Option 3 Link" +
+                " must be selected");
     }
 
     @AfterTest(alwaysRun = true)
