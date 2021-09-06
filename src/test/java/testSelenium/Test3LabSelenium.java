@@ -13,15 +13,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class Test3LabSelenium {
-    WebDriver driver;
+
+    WebDriver driver = new ChromeDriver();
+    WebDriverWait wait = new WebDriverWait(driver, 30);
+    WebDriverWait wait2 = new WebDriverWait(driver, 10);
 
     @Test
     public void thirdTestSelenium() {
-
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        WebDriverWait wait2 = new WebDriverWait(driver, 10);
         driver.manage().window().maximize();
         String urlSeleniumTestSite = "https://www.seleniumeasy.com/test/";
         driver.get(urlSeleniumTestSite);

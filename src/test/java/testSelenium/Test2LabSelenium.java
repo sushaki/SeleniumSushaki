@@ -1,3 +1,5 @@
+package testSelenium;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,15 +13,14 @@ import org.testng.annotations.Test;
 
 
 public class Test2LabSelenium {
-    WebDriver driver;
+    WebDriver driver = new ChromeDriver();
+    WebDriverWait wait = new WebDriverWait(driver, 25);
+    WebDriverWait wait2 = new WebDriverWait(driver, 10);
 
     @Test
     public void secondTestSelenium() {
 
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        WebDriverWait wait = new WebDriverWait(driver, 25);
-        WebDriverWait wait2 = new WebDriverWait(driver, 10);
         driver.manage().window().maximize();
         String urlSeleniumTestSite = "https://www.seleniumeasy.com/test/";
         driver.get(urlSeleniumTestSite);
